@@ -13,7 +13,7 @@
   <main class="page">
     <header class="hero">
       <h1>CV</h1>
-      <h2>Marko Tamm</h2>
+      <h2><%= cv.fName %> <%= cv.lName %></h2>
     </header>
 
     <img class="section profile-photo" src="images/1.png" alt="Marko Tamme profiilipilt">
@@ -30,10 +30,10 @@
     <section class="section contact-section">
       <h3>Kontaktandmed</h3>
       <div class="box contact-box">
-        <p>Nimi: <span id="fName"></span> <span id="lName"></span></p>
-        <p>Vanus: <span id="age"></span></p>
+        <p>Nimi: <%= cv.fName %> <%= cv.lName %></p>
+        <p>Vanus: <%= cv.age %></p>
         <p>Telefon: +372 5551 2345</p>
-        <p>E-post: <span id="email"></span></p>
+        <p>E-post: <%= cv.email %></p>
         <p>Asukoht: Tallinn, Eesti</p>
       </div>
     </section>
