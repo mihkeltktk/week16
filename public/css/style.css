@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #000000;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+}
+
+.page {
+  width: 900px;
+  margin: 0 auto;
+  padding: 0 0 28px;
+}
+
+.hero h1 {
+  margin: 25px 0 10px;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.hero h2 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.profile-photo {
+  display: block;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+
+.section {
+  margin-top: 40px;
+}
+
+h3 {
+  margin: 0 0 20px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.box {
+  width: 100%;
+  padding: 9px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  background: #f7f7f7;
+  text-align: justify;
+}
+
+p {
+  margin: 0 0 1em;
+  line-height: normal;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0 0 1em 1.7em;
+  padding: 0;
+}
+
+ul:last-child {
+  margin-bottom: 0;
+}
+
+.two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.two-columns .section,
+.two-columns .column {
+  margin-top: 0;
+}
+
+.skills-box p {
+  margin-bottom: 0;
+}
+
+.skills-box ul {
+  margin: 0 0 0 1.7em;
+}
+
+.tech-icons {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin: 25px 0 30px;
+}
+
+.tech-icon {
+  height: 25px;
+ }
+
+.footer {
+  margin: 40px 0 25px;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 20px;
+  margin: 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin: 0 0 40px;
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  transition: background-image 0.3s ease-in-out;
+}
+
+.instagram-icon {
+  background-image: url("../images/instagram.svg");
+}
+
+.instagram-icon:hover, .instagram-icon:focus {
+  background-image: url("../images/instagram_red.svg");
+}
+
+.facebook-icon {
+  background-image: url("../images/facebook.svg");
+}
+
+.facebook-icon:hover, .facebook-icon:focus {
+  background-image: url("../images/facebook_red.svg");
+}
+
+.youtube-icon {
+  background-image: url("../images/youtube.svg");
+}
+
+.youtube-icon:hover, .youtube-icon:focus {
+  background-image: url("../images/youtube_red.svg");
+}
+
+@media (max-width: 420px) {
+  body {
+    font-size: 10px;
+  }
+
+  .page {
+    width: 393px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  
+.hero h1 {
+  margin: 25px 0 3px;
+  font-size: 20px;
+}
+
+.hero h2 {
+  font-size: 16px;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+}
+
+.section {
+  margin-top: 15px;
+}
+
+h3 {
+  margin: 0 0 10px;
+  font-size: 14px;
+}
+
+.box {
+  padding: 4px;
+}
+
+.two-columns {
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.tech-icons {
+  gap: 30px;
+  margin: 5px 0 10px;
+}
+
+.tech-icon {
+  height: 15px;
+ }
+
+.footer {
+  margin: 15px 0 25px;
+}
+
+.footer p {
+  font-size: 12px;
+}
+
+.social-icons {
+  gap: 50px;
+  margin: 0 0 15px;
+}
+
+.social-icon {
+  width: 25px;
+  height: 25px;
+}
+}
